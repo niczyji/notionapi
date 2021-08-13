@@ -32,9 +32,9 @@ const addData = async () => {
     div.classList.add("userContainer");
     div.innerHTML = `
         <h3>${value.name}</h3>
-        <p>${value.role}</p>
-        <p>${value.unit}</p> 
-        
+        <p>${value.unit}</p>
+        <p>${value.roleMember}</p>
+        <b>${value.roleOwner}</b>
 `;
     container.append(div);
   });
