@@ -9,7 +9,7 @@ function urlParam(params) {
   var string = "https://www.notion.so/House-of-Stories-1f06dd726a8e4e3db725d88905fd5aed"
   var string1 = 'https://www.notion.so/Die-Gef-hrten-d8f05831c73a4bb38c894c6f55945cad';
   var length = string.length;
-  console.log(string1.substring(22, string1.length-33 ).replace(/-/g, " ").replace(/f h/g, 'faeh'));
+  console.log(string1.substring(22, string1.length-33 ).replace(/-/g, " ").replace(/h f/g, 'fueh'));
   console.log(length);
 }
 
