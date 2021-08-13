@@ -5,6 +5,13 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const databaseId = process.env.NOTION_DATABASE_ID;
 
 
+function urlParam(params) {
+  var string = "https://www.notion.so/House-of-Stories-1f06dd726a8e4e3db725d88905fd5aed"
+  var string1 = 'https://www.notion.so/Die-Gef-hrten-d8f05831c73a4bb38c894c6f55945cad';
+  var length = string.length;
+  console.log(string1.substring(22, string1.length-33 ).replace(/-/g, " ").replace(/f h/g, 'faeh'));
+  console.log(length);
+}
 
 exports.getDatabase = async function () {
   const response = await notion.databases.query({ database_id: databaseId });
